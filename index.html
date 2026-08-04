@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Victor Kauê — Engenheiro de Dados com background em iOS." />
+  <meta name="keywords" content="portfólio, engenharia de dados, python, sql, swift, victor kauê" />
+  <meta name="author" content="Victor Kauê" />
+  <title>Victor Kauê | Portfólio Dados</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- =============================================
+       BARRA DE NAVEGAÇÃO FIXA (menu principal)
+       Links de âncora para cada seção da página
+  ============================================= -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">VK<span class="dot">.</span></a>
+      <div class="nav-right">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#formacao" class="nav-link">Formação</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- =============================================
+       SEÇÃO HERO — Apresentação inicial com
+       animação de typewriter e links sociais
+  ============================================= -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Victor Kauê</h1>
+      <div class="hero-roles">
+        <span class="role-text" id="role-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Engenheiro de Dados com background em desenvolvimento iOS, focado em criar soluções eficientes para processamento de dados e IA.
+      </p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/VictorKaue" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/victor-kauê-89234a322" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:victorkaue909@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/5561993957743" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span>Role para baixo</span>
+    </div>
+  </section>
+  <!-- =============================================
+       SEÇÃO SOBRE MIM — Foto, apresentação,
+       hobbies e habilidades técnicas
+  ============================================= -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / Sobre</span>
+        <h2 class="section-title">Sobre Mim</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image">
+            <img src="images/FotoDePerfil.jpeg" alt="Victor Kauê" />
+          </div>
+          <div class="about-badge">
+            <i class="fas fa-database"></i>
+            <span>Engenheiro de Dados</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <h3>Transformando dados em soluções eficientes e escaláveis.</h3>
+          <p>
+            Sou estudante de <strong>Ciência da Computação</strong> e <strong>Ciência de Dados</strong>, com foco em <strong>Engenharia de Dados</strong> e um background sólido em desenvolvimento mobile (iOS). Tenho grande interesse em criar pipelines de dados eficientes, explorar <strong>Machine Learning</strong> e construir arquiteturas escaláveis.
+          </p>
+          <p>
+            Minha experiência une o processamento e a análise de dados com <strong>Python, SQL, Apache Airflow e Docker</strong> ao desenvolvimento back-end em <strong>TypeScript/NestJS, FastAPI e Flask</strong>, além de interfaces nativas em <strong>Swift e SwiftUI</strong>. Essa vivência me permite compreender todo o ciclo de vida de um produto, desde a extração do dado até a experiência final do usuário.
+          </p>
+          <p>
+            Atualmente, busco aprofundar meus conhecimentos em infraestrutura de dados (ETL/ELT, OLAP/OLTP, processamento distribuído com PySpark e Databricks) enquanto continuo aplicando boas práticas — testes automatizados, CI/CD e observabilidade — na construção de soluções reais e eficientes.
+          </p>
+          <!-- Hobbies e interesses pessoais -->
+          <div class="hobbies-wrap">
+            <h4>Interesses &amp; Hobbies</h4>
+            <div class="hobbies-grid">
+              <span class="hobby-item"><i class="fas fa-music"></i> Música</span>
+              <span class="hobby-item"><i class="fas fa-gamepad"></i> Games</span>
+              <span class="hobby-item"><i class="fas fa-book"></i> Leitura</span>
+              <span class="hobby-item"><i class="fas fa-film"></i> Cinema</span>
+              <span class="hobby-item"><i class="fas fa-dumbbell"></i> Musculação</span>
+              <span class="hobby-item"><i class="fas fa-code"></i> Open Source</span>
+            </div>
+          </div>
+          <div class="skills-wrap">
+            <h4>Engenharia de Dados & Backend</h4>
+            <div class="skills-grid">
+              <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+              <div class="skill-item"><i class="fab fa-node-js"></i> TypeScript / NestJS</div>
+              <div class="skill-item"><i class="fas fa-database"></i> SQL / NoSQL</div>
+              <div class="skill-item"><i class="fas fa-server"></i> PostgreSQL / MySQL</div>
+              <div class="skill-item"><i class="fas fa-network-wired"></i> ETL/ELT</div>
+              <div class="skill-item"><i class="fas fa-wind"></i> Apache Airflow</div>
+              <div class="skill-item"><i class="fas fa-bolt"></i> PySpark / Databricks</div>
+              <div class="skill-item"><i class="fas fa-bezier-curve"></i> FastAPI / Flask</div>
+              <div class="skill-item"><i class="fas fa-layer-group"></i> Redis</div>
+              <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
+              <div class="skill-item"><i class="fas fa-robot"></i> Machine Learning & LLMs</div>
+              <div class="skill-item"><i class="fas fa-cogs"></i> CI/CD (GitHub Actions)</div>
+              <div class="skill-item"><i class="fas fa-vial"></i> Pytest / Jest</div>
+              <div class="skill-item"><i class="fab fa-linux"></i> Linux / Terminal</div>
+              <div class="skill-item"><i class="fab fa-aws"></i> AWS (noções)</div>
+            </div>
+            <h4 style="margin-top: 1.5rem;">Desenvolvimento iOS (Diferencial)</h4>
+            <div class="skills-grid">
+              <div class="skill-item"><i class="fas fa-mobile-alt"></i> Swift / SwiftUI</div>
+              <div class="skill-item"><i class="fas fa-brain"></i> CoreML / CreateML</div>
+              <div class="skill-item"><i class="fas fa-cube"></i> RealityKit / SpriteKit</div>
+              <div class="skill-item"><i class="fas fa-cubes"></i> Arquitetura Clean (MVVM-C)</div>
+              <div class="skill-item"><i class="fas fa-exchange-alt"></i> API / REST</div>
+            </div>
+          </div>
+          <a href="assets/Victor_Kaue_CV.pdf" class="btn btn-primary" download="Victor_Kaue_CV.pdf">
+            <i class="fas fa-download"></i> Baixar CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =============================================
+       SEÇÃO FORMAÇÃO — Educação, experiência
+       e cursos com navegação por abas (tabs)
+  ============================================= -->
+  <section id="formacao" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Formação</span>
+        <h2 class="section-title">Formação & Experiência</h2>
+      </div>
+      <div class="timeline-tabs">
+        <button class="tab-btn active" data-tab="educacao" id="tab-educacao">
+          <i class="fas fa-graduation-cap"></i> Educação
+        </button>
+        <button class="tab-btn" data-tab="experiencia" id="tab-experiencia">
+          <i class="fas fa-briefcase"></i> Experiência
+        </button>
+        <button class="tab-btn" data-tab="cursos" id="tab-cursos">
+          <i class="fas fa-certificate"></i> Cursos
+        </button>
+      </div>
+      <div class="tab-content active" id="tab-content-educacao">
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2024 – 2027</span>
+              <h3>Ciência da Computação</h3>
+              <h4>Universidade Católica de Brasília (UCB) · <span>Bacharelado</span></h4>
+              <p>Formação em algoritmos, engenharia de software e fundamentos computacionais, desenvolvendo raciocínio lógico e arquitetura de sistemas.</p>
+              <div class="timeline-tags">
+                <span>Computação</span><span>Algoritmos</span><span>Engenharia de Software</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2025 – 2027</span>
+              <h3>Ciência de Dados</h3>
+              <h4>Centro Universitário Internacional (UNINTER) · <span>Tecnólogo</span></h4>
+              <p>Aprofundamento em processamento de dados, machine learning e estatística, aplicando modelagem analítica a problemas do mundo real.</p>
+              <div class="timeline-tags">
+                <span>Dados</span><span>Estatística</span><span>Machine Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-content-experiencia">
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">Fev 2025 – Dez 2026 (atual)</span>
+              <h3>Apple Developer Academy</h3>
+              <h4>Brasília, DF · <span>Desenvolvedor</span></h4>
+              <p>Desenvolvimento de produtos nativos publicados na App Store, da estruturação dos dados à entrega final. No <strong>Projeto Matcha</strong> (app de estudos colaborativo), projetei a modelagem relacional no Supabase (PostgreSQL) e o back-end em TypeScript/NestJS, implementando polling com cache em Redis para sincronizar sessões de estudo em tempo quase real, com testes automatizados em Jest.</p>
+              <div class="timeline-tags">
+                <span>Swift</span><span>SwiftUI</span><span>TypeScript</span><span>NestJS</span><span>Supabase</span><span>Redis</span><span>Jest</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">Fev 2024 – Jul 2026</span>
+              <h3>Porto Digital</h3>
+              <h4>Recife, PE · <span>Desenvolvedor</span></h4>
+              <p>Atuação em times multidisciplinares no desenvolvimento de uma ferramenta de transcrição de reuniões com resumos gerados por IA. Como <strong>líder de squad</strong>, conduzi o sistema de eventos do BB Digital Week (BBTS), com módulo de IA usando LLM local (Ollama) para identificar conflitos entre palestras. Back-end em Python com Flask e FastAPI, incluindo modelagem de dados em PostgreSQL e MySQL.</p>
+              <div class="timeline-tags">
+                <span>Python</span><span>Flask</span><span>FastAPI</span><span>MySQL</span><span>Ollama</span><span>IA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-content-cursos">
+        <div class="courses-grid">
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fab fa-python"></i></div>
+            <div class="course-info">
+              <h3>Fundamentos de Engenharia de Dados</h3>
+              <p>Data Science Academy</p>
+              <span class="course-year">2026</span>
+            </div>
+          </div>
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fas fa-database"></i></div>
+            <div class="course-info">
+              <h3>Engenharia de Dados</h3>
+              <p>FreeCodeCamp</p>
+              <span class="course-year">2026</span>
+            </div>
+          </div>
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fab fa-docker"></i></div>
+            <div class="course-info">
+              <h3>Docker e Containerização</h3>
+              <p>Rocketseat</p>
+              <span class="course-year">2026</span>
+            </div>
+          </div>
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fab fa-git-alt"></i></div>
+            <div class="course-info">
+              <h3>Git e GitHub Profissional</h3>
+              <p>Tic em Trilhas</p>
+              <span class="course-year">2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =============================================
+       SEÇÃO PORTFÓLIO — Projetos reais com
+       filtros por categoria e links externos
+  ============================================= -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Portfólio</span>
+        <h2 class="section-title">Projetos</h2>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn" data-filter="all" id="filter-all">Todos</button>
+        <button class="filter-btn active" data-filter="dados" id="filter-dados">Dados & IA</button>
+        <button class="filter-btn" data-filter="backend" id="filter-backend">Backend (Diferencial)</button>
+        <button class="filter-btn" data-filter="ios" id="filter-ios">iOS (Diferencial)</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <div class="project-card reveal" data-category="dados backend">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-shield-alt"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/brenomarq/ShieldData" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-dados">Dados</span>
+              <span class="tag tag-ia">NLP</span>
+            </div>
+            <h3>ShieldData</h3>
+            <p><strong>Projeto Principal.</strong> Solução desenvolvida em hackathon para identificação e classificação de dados sensíveis em textos. Processamento robusto utilizando modelos avançados de NLP e expressões regulares.</p>
+            <div class="project-tech">
+              <span>Python</span><span>BERT</span><span>Regex</span><span>spaCy</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="dados">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-layer-group"></i></div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-dados">Dados</span>
+            </div>
+            <h3>Processamento de Dados em Larga Escala</h3>
+            <p>Pipelines de processamento distribuído construídos com <strong>PySpark</strong> e <strong>Databricks</strong> para ingestão, transformação e otimização de grandes volumes de dados, com foco em qualidade e eficiência na modelagem.</p>
+            <div class="project-tech">
+              <span>PySpark</span><span>Databricks</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="dados backend">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-calendar-check"></i></div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-ia">IA</span>
+              <span class="tag tag-dados">Dados</span>
+            </div>
+            <h3>BB Digital Week</h3>
+            <p>Atuação como <strong>líder de squad</strong> com foco exclusivo na parte de IA do projeto. Fui responsável pelo desenvolvimento da solução de análise inteligente para identificação de conflitos entre palestras, utilizando modelo local (Ollama).</p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>Ollama</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="ios dados backend">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-plane"></i></div>
+            <div class="project-overlay">
+              <a href="https://apps.apple.com/br/app/liber-interc%C3%A2mbio/id6764118895" target="_blank" class="project-link"><i class="fab fa-apple"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-ios">iOS</span>
+              <span class="tag tag-dados">Dados</span>
+            </div>
+            <h3>Liber Intercâmbio</h3>
+            <p><strong>Projeto pessoal ponta a ponta.</strong> App iOS para centralizar informações sobre intercâmbio, com Machine Learning on-device. Por trás, desenvolvo sozinho todo o pipeline de dados (ELT): crawler coleta dados brutos para um Data Lake local (MinIO), Gemini estrutura o conteúdo com validação via Pydantic, e o Airflow orquestra a carga em PostgreSQL — com testes em Pytest, CI/CD via GitHub Actions e observabilidade com Prometheus.</p>
+            <div class="project-tech">
+              <span>SwiftUI</span><span>CreateML</span><span>CoreML</span><span>Airflow</span><span>MinIO</span><span>Gemini</span><span>GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal hidden" data-category="ios backend">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-mug-hot"></i></div>
+            <div class="project-overlay">
+              <a href="https://testflight.apple.com/join/ThDeAngw" target="_blank" class="project-link"><i class="fab fa-apple"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-ios">macOS</span>
+              <span class="tag tag-backend">Backend</span>
+            </div>
+            <h3>Matcha</h3>
+            <p><strong>Projeto da Apple Developer Academy.</strong> App para macOS que ajuda estudantes a manter foco e consistência: grupos de estudo, acompanhamento de amigos em tempo real e sessões que funcionam mesmo offline. Modelei a base relacional no Supabase (PostgreSQL) e desenvolvi o back-end em NestJS, com polling em cache via Redis para sincronizar sessões quase em tempo real, testado com Jest. Em beta fechado no TestFlight.</p>
+            <div class="project-tech">
+              <span>SwiftUI</span><span>NestJS</span><span>Supabase</span><span>Redis</span><span>Jest</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal hidden" data-category="ios">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-star"></i></div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-ios">iOS</span>
+            </div>
+            <h3>Astronomous</h3>
+            <p>Aplicação educacional interativa. O projeto apresenta uma visualização 3D rica do ciclo de vida das estrelas, explorando o uso de tecnologias imersivas nativas da Apple.</p>
+            <div class="project-tech">
+              <span>RealityKit</span><span>SwiftUI</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal hidden" data-category="ios">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-running"></i></div>
+            <div class="project-overlay">
+              <a href="https://apps.apple.com/br/app/runiverse-save-the-universe/id6752032792" target="_blank" class="project-link"><i class="fab fa-apple"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-ios">iOS / Jogos</span>
+            </div>
+            <h3>Runiverse</h3>
+            <p>Jogo iOS no estilo endless runner focado em oferecer uma experiência de usuário altamente interativa e responsiva. Demonstra proficiência em frameworks gráficos 2D nativos da Apple.</p>
+            <div class="project-tech">
+              <span>SpriteKit</span><span>AVFoundation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =============================================
+       SEÇÃO CONTATO — Formulário com validação
+       JavaScript e simulação de envio
+  ============================================= -->
+  <section id="contato" class="section section-alt has-blobs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Contato</span>
+        <h2 class="section-title">Vamos Conversar?</h2>
+        <p class="section-subtitle">
+          Estou aberto a novas oportunidades, colaborações e projetos interessantes. Entre em contato!
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>E-mail</h4>
+              <a href="mailto:victorkaue909@gmail.com">victorkaue909@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/5561993957743" target="_blank">+55 (61) 99395-7743</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/VictorKaue" target="_blank">github.com/VictorKaue</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/victor-kauê-89234a322" target="_blank">linkedin.com/in/victor-kauê
+              </a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Localização</h4>
+              <p>🇧🇷 Brasil - Brasília </p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span id="btn-text"><i class="fas fa-paper-plane"></i> Enviar Mensagem</span>
+            <span id="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Enviando...</span>
+          </button>
+          <div class="form-success" id="form-success" style="display:none;">
+            <i class="fas fa-check-circle"></i> Mensagem enviada com sucesso! Em breve entrarei em contato.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p>Desenvolvido por <strong>Victor Kauê</strong></p>
+      <div class="footer-social">
+        <a href="https://github.com/VictorKaue" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/victor-kauê-89234a322" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:victorkaue909@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/5561993957743" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Victor Kauê. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <button id="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>
