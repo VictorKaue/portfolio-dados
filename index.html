@@ -125,6 +125,13 @@
               <span class="hobby-item"><i class="fas fa-language"></i> Português nativo</span>
             </div>
           </div>
+          <div class="hobbies-wrap">
+            <h4>Soft Skills</h4>
+            <div class="hobbies-grid">
+              <span class="hobby-item"><i class="fas fa-flag-checkered"></i> Ownership (projetos ponta a ponta)</span>
+              <span class="hobby-item"><i class="fas fa-seedling"></i> Autonomia de Aprendizado</span>
+            </div>
+          </div>
           <div class="skills-wrap">
             <h4>Engenharia de Dados & Backend</h4>
             <div class="skills-grid">
@@ -137,10 +144,12 @@
               <div class="skill-item"><i class="fas fa-bolt"></i> PySpark / Databricks</div>
               <div class="skill-item"><i class="fas fa-bezier-curve"></i> FastAPI / Flask</div>
               <div class="skill-item"><i class="fas fa-layer-group"></i> Redis</div>
-              <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
+              <div class="skill-item"><i class="fab fa-docker"></i> Docker / Docker Compose</div>
               <div class="skill-item"><i class="fas fa-robot"></i> Machine Learning & LLMs</div>
               <div class="skill-item"><i class="fas fa-cogs"></i> CI/CD (GitHub Actions)</div>
               <div class="skill-item"><i class="fas fa-vial"></i> Pytest / Jest</div>
+              <div class="skill-item"><i class="fas fa-check-double"></i> Pydantic</div>
+              <div class="skill-item"><i class="fas fa-database"></i> Data Lakes (MinIO)</div>
               <div class="skill-item"><i class="fab fa-linux"></i> Linux / Terminal</div>
             </div>
             <h4 style="margin-top: 1.5rem;">Desenvolvimento iOS (Diferencial)</h4>
@@ -216,7 +225,7 @@
               <span class="timeline-period">Fev 2025 – Dez 2026 (atual)</span>
               <h3>Apple Developer Academy</h3>
               <h4>Brasília, DF · <span>Desenvolvedor</span></h4>
-              <p>Desenvolvimento de produtos nativos publicados na App Store, da estruturação dos dados à entrega final. No <strong>Projeto Matcha</strong> (app de estudos colaborativo), projetei a modelagem relacional no Supabase (PostgreSQL) e o back-end em TypeScript/NestJS, implementando polling com cache em Redis para sincronizar sessões de estudo em tempo quase real, com testes automatizados em Jest.</p>
+              <p>Desenvolvimento de produtos nativos publicados na App Store, da estruturação dos dados à entrega final. No <strong>Projeto Matcha</strong> (app de estudos colaborativo), projetei a modelagem relacional no Supabase (PostgreSQL), usando colunas Timestamp with Timezone para sincronizar o horário de estudo entre os membros do grupo, e o back-end em TypeScript/NestJS, implementando polling com cache em Redis para sincronizar sessões de estudo em tempo quase real, com testes automatizados em Jest.</p>
               <div class="timeline-tags">
                 <span>Swift</span><span>SwiftUI</span><span>TypeScript</span><span>NestJS</span><span>Supabase</span><span>Redis</span><span>Jest</span>
               </div>
@@ -228,7 +237,7 @@
               <span class="timeline-period">Fev 2024 – Jul 2026</span>
               <h3>Porto Digital</h3>
               <h4>Recife, PE · <span>Desenvolvedor</span></h4>
-              <p>Atuação em times multidisciplinares no desenvolvimento de uma ferramenta de transcrição de reuniões com resumos gerados por IA. Como <strong>líder de squad</strong>, conduzi o sistema de eventos do BB Digital Week (BBTS), com módulo de IA usando LLM local (Ollama) para identificar conflitos entre palestras. Back-end em Python com Flask e FastAPI, incluindo modelagem de dados em PostgreSQL e MySQL.</p>
+              <p>Atuação em times multidisciplinares no desenvolvimento de uma ferramenta de transcrição de reuniões com resumos gerados por IA. Como <strong>líder de squad</strong>, conduzi o sistema de eventos do BB Digital Week (BBTS), com módulo de IA agêntica usando LLM local (Ollama) para identificar conflitos entre palestras. Back-end em Python com Flask e FastAPI, incluindo modelagem de dados em PostgreSQL e MySQL.</p>
               <div class="timeline-tags">
                 <span>Python</span><span>Flask</span><span>FastAPI</span><span>MySQL</span><span>Ollama</span><span>IA</span>
               </div>
@@ -304,7 +313,7 @@
               <span class="tag tag-ia">NLP</span>
             </div>
             <h3>ShieldData</h3>
-            <p><strong>Projeto Principal.</strong> Solução para identificação e classificação de dados sensíveis em textos, com processamento robusto utilizando modelos avançados de NLP e expressões regulares.</p>
+            <p><strong>Projeto Principal.</strong> Solução para identificação e classificação de dados sensíveis em textos, visando compliance com a LGPD e governança de dados, com processamento robusto utilizando modelos avançados de NLP e expressões regulares.</p>
             <div class="project-tech">
               <span>Python</span><span>BERT</span><span>Regex</span><span>spaCy</span>
             </div>
@@ -319,7 +328,7 @@
               <span class="tag tag-dados">Dados</span>
             </div>
             <h3>Processamento de Dados em Larga Escala</h3>
-            <p>Pipelines de processamento distribuído construídos com <strong>PySpark</strong> e <strong>Databricks</strong> para ingestão, transformação e otimização de grandes volumes de dados, com foco em qualidade e eficiência na modelagem.</p>
+            <p>Pipelines de processamento distribuído construídos com <strong>PySpark</strong> e <strong>Databricks</strong>, aplicando conceitos de arquitetura Lakehouse para ingestão, transformação e otimização de grandes volumes de dados, com foco em qualidade e eficiência na modelagem.</p>
             <div class="project-tech">
               <span>PySpark</span><span>Databricks</span><span>Python</span>
             </div>
@@ -335,7 +344,7 @@
               <span class="tag tag-dados">Dados</span>
             </div>
             <h3>BB Digital Week</h3>
-            <p>Atuação como <strong>líder de squad</strong>, com foco na parte de IA do projeto: desenvolvi a solução de análise inteligente para identificação de conflitos entre palestras usando um modelo local (Ollama). O sistema está pronto e validado; a entrada em produção segue pendente da data do evento e dos trâmites internos de um banco.</p>
+            <p>Atuação como <strong>líder de squad</strong>, com foco na parte de IA do projeto: desenvolvi uma solução de IA agêntica para análise inteligente e identificação de conflitos entre palestras usando um modelo local (Ollama). O sistema está pronto e validado; a entrada em produção segue pendente da data do evento e dos trâmites internos de um banco.</p>
             <div class="project-tech">
               <span>Python</span><span>Flask</span><span>Ollama</span>
             </div>
@@ -354,7 +363,7 @@
               <span class="tag tag-dados">Dados</span>
             </div>
             <h3>Liber Intercâmbio</h3>
-            <p><strong>Projeto pessoal ponta a ponta.</strong> App iOS para centralizar informações sobre intercâmbio, com Machine Learning on-device. Desenvolvo sozinho todo o pipeline de dados (ELT): um crawler coleta dados brutos para um Data Lake local (MinIO), o Gemini estrutura o conteúdo com validação via Pydantic — com deduplicação por hash SHA-256 do conteúdo para evitar chamadas pagas redundantes à API — e o Airflow orquestra a carga em PostgreSQL. Isolei falhas de extração por IA em SAVEPOINTs por item, para que um único registro inválido não derrube o lote inteiro.</p>
+            <p><strong>Projeto pessoal ponta a ponta.</strong> App iOS para centralizar informações sobre intercâmbio, com Machine Learning on-device. Desenvolvo sozinho todo o pipeline de dados (ELT): um crawler (httpx + Playwright) coleta dados brutos para um Data Lake local (MinIO), o Gemini estrutura o conteúdo com validação via Pydantic — com deduplicação por hash SHA-256 do conteúdo para evitar chamadas pagas redundantes à API — e o Airflow orquestra a carga em PostgreSQL. Isolei falhas de extração por IA em SAVEPOINTs por item, para que um único registro inválido não derrube o lote inteiro, e monitoro a infraestrutura com Prometheus.</p>
             <div class="project-metrics">
               <span><i class="fas fa-bolt"></i> -51% no tempo de ingestão (70s → 34s)</span>
               <span><i class="fas fa-mobile-alt"></i> 11 downloads na App Store</span>
@@ -377,9 +386,10 @@
               <span class="tag tag-backend">Backend</span>
             </div>
             <h3>Matcha</h3>
-            <p><strong>Projeto da Apple Developer Academy.</strong> App para macOS que ajuda estudantes a manter foco e consistência, mostrando em tempo quase real quem do grupo ainda está estudando. Modelei a base relacional no Supabase (PostgreSQL) e resolvi o problema de atualização constante com polling de 15 segundos no cliente combinado a cache no servidor via Redis, testado com Jest. Em beta fechado no TestFlight.</p>
+            <p><strong>Projeto da Apple Developer Academy.</strong> App para macOS que ajuda estudantes a manter foco e consistência, mostrando em tempo quase real quem do grupo ainda está estudando. Modelei a base relacional no Supabase (PostgreSQL), com colunas Timestamp with Timezone para sincronizar o horário de estudo entre os membros do grupo, e resolvi o problema de atualização constante com polling de 15 segundos no cliente combinado a cache no servidor via Redis e connection pooling, testado com Jest. Em beta fechado no TestFlight.</p>
             <div class="project-metrics">
               <span><i class="fas fa-bolt"></i> -90% no tempo de resposta</span>
+              <span><i class="fas fa-clock"></i> Polling: 30s → 15s (-50%)</span>
               <span><i class="fas fa-users"></i> 10 testadores no beta fechado</span>
             </div>
             <div class="project-tech">
