@@ -58,7 +58,7 @@ function updateActiveNav() {
   });
 }
 // ── Typewriter — anima o texto de roles no hero ───────────────
-const roles = ['Engenheiro de Dados', 'Desenvolvedor iOS', 'Entusiasta de Dados', 'Solucionador de Problemas'];
+const roles = ['Engenheiro de Dados', 'Entusiasta de Dados', 'Arquiteto de Pipelines', 'Solucionador de Problemas'];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 const roleText = document.getElementById('role-text');
 function type() {

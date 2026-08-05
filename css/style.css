@@ -342,6 +342,14 @@ ul { list-style: none; }
 .filter-btn:hover { border-color: var(--primary); color: var(--primary-light); }
 .filter-btn.active { background: var(--gradient); color: #0F172A; border-color: transparent; }
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; align-items: start; }
+.project-metrics { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 16px; }
+.project-metrics span {
+  font-size: 0.72rem; font-weight: 600; padding: 5px 12px;
+  background: rgba(7,208,10,0.12); border: 1px solid rgba(7,208,10,0.2);
+  border-radius: 50px; color: var(--primary-light);
+  display: inline-flex; align-items: center; gap: 5px;
+}
+.project-metrics span i { font-size: 0.68rem; }
 .project-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   overflow: hidden; transition: var(--transition);

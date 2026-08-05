@@ -54,7 +54,7 @@
         <span class="role-text" id="role-text"></span><span class="cursor-blink">|</span>
       </div>
       <p class="hero-desc">
-        Engenheiro de Dados com background em desenvolvimento iOS, focado em criar soluções eficientes para processamento de dados e IA.
+        Engenheiro de Dados focado em pipelines resilientes de ingestão e IA — que tratam falha, controlam custo e escalam com dado real.
       </p>
       <div class="hero-cta">
         <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
@@ -102,6 +102,9 @@
           </p>
           <p>
             Atualmente, busco aprofundar meus conhecimentos em infraestrutura de dados (ETL/ELT, OLAP/OLTP, processamento distribuído com PySpark e Databricks) enquanto continuo aplicando boas práticas — testes automatizados, CI/CD e observabilidade — na construção de soluções reais e eficientes.
+          </p>
+          <p>
+            Esse lado iOS não fica só no currículo: é ele que sustenta o Liber Intercâmbio (App Store, ML on-device) e o Matcha, onde um cache que desenhei no back-end reduziu em 90% o tempo de resposta das atualizações em tempo real.
           </p>
           <!-- Hobbies e interesses pessoais -->
           <div class="hobbies-wrap">
@@ -326,7 +329,7 @@
               <span class="tag tag-dados">Dados</span>
             </div>
             <h3>BB Digital Week</h3>
-            <p>Atuação como <strong>líder de squad</strong> com foco exclusivo na parte de IA do projeto. Fui responsável pelo desenvolvimento da solução de análise inteligente para identificação de conflitos entre palestras, utilizando modelo local (Ollama).</p>
+            <p>Atuação como <strong>líder de squad</strong>, com foco na parte de IA do projeto: desenvolvi a solução de análise inteligente para identificação de conflitos entre palestras usando um modelo local (Ollama). O sistema está pronto e validado; a entrada em produção segue pendente da data do evento e dos trâmites internos de um banco.</p>
             <div class="project-tech">
               <span>Python</span><span>Flask</span><span>Ollama</span>
             </div>
@@ -345,7 +348,11 @@
               <span class="tag tag-dados">Dados</span>
             </div>
             <h3>Liber Intercâmbio</h3>
-            <p><strong>Projeto pessoal ponta a ponta.</strong> App iOS para centralizar informações sobre intercâmbio, com Machine Learning on-device. Por trás, desenvolvo sozinho todo o pipeline de dados (ELT): crawler coleta dados brutos para um Data Lake local (MinIO), Gemini estrutura o conteúdo com validação via Pydantic, e o Airflow orquestra a carga em PostgreSQL — com testes em Pytest, CI/CD via GitHub Actions e observabilidade com Prometheus.</p>
+            <p><strong>Projeto pessoal ponta a ponta.</strong> App iOS para centralizar informações sobre intercâmbio, com Machine Learning on-device. Desenvolvo sozinho todo o pipeline de dados (ELT): um crawler coleta dados brutos para um Data Lake local (MinIO), o Gemini estrutura o conteúdo com validação via Pydantic — com deduplicação por hash SHA-256 do conteúdo para evitar chamadas pagas redundantes à API — e o Airflow orquestra a carga em PostgreSQL. Isolei falhas de extração por IA em SAVEPOINTs por item, para que um único registro inválido não derrube o lote inteiro.</p>
+            <div class="project-metrics">
+              <span><i class="fas fa-bolt"></i> -51% no tempo de ingestão (70s → 34s)</span>
+              <span><i class="fas fa-mobile-alt"></i> 11 downloads na App Store</span>
+            </div>
             <div class="project-tech">
               <span>SwiftUI</span><span>CreateML</span><span>CoreML</span><span>Airflow</span><span>MinIO</span><span>Gemini</span><span>GitHub Actions</span>
             </div>
@@ -364,7 +371,11 @@
               <span class="tag tag-backend">Backend</span>
             </div>
             <h3>Matcha</h3>
-            <p><strong>Projeto da Apple Developer Academy.</strong> App para macOS que ajuda estudantes a manter foco e consistência: grupos de estudo, acompanhamento de amigos em tempo real e sessões que funcionam mesmo offline. Modelei a base relacional no Supabase (PostgreSQL) e desenvolvi o back-end em NestJS, com polling em cache via Redis para sincronizar sessões quase em tempo real, testado com Jest. Em beta fechado no TestFlight.</p>
+            <p><strong>Projeto da Apple Developer Academy.</strong> App para macOS que ajuda estudantes a manter foco e consistência, mostrando em tempo quase real quem do grupo ainda está estudando. Modelei a base relacional no Supabase (PostgreSQL) e resolvi o problema de atualização constante com polling de 15 segundos no cliente combinado a cache no servidor via Redis, testado com Jest. Em beta fechado no TestFlight.</p>
+            <div class="project-metrics">
+              <span><i class="fas fa-bolt"></i> -90% no tempo de resposta</span>
+              <span><i class="fas fa-users"></i> 10 testadores no beta fechado</span>
+            </div>
             <div class="project-tech">
               <span>SwiftUI</span><span>NestJS</span><span>Supabase</span><span>Redis</span><span>Jest</span>
             </div>
